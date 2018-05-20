@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.firebase.codelab.friendlychat.contactUs"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:contentInsetStart="0dp"
+        style="@style/Toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Contact Us"
+            android:layout_marginLeft="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="100dp"
+            android:weightSum="2">
+            <ImageButton
+                android:id="@+id/fb"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="#FFFFFF"
+                android:scaleType="centerInside"
+                android:onClick="onClick"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/facebook" />
+
+            <ImageButton
+                android:id="@+id/insta"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="#FFFFFF"
+                android:scaleType="centerInside"
+                android:onClick="onClick"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/instagram" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="50dp"
+            android:text="Contact:987654321/987654321"
+            android:textColor="@android:color/black" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
